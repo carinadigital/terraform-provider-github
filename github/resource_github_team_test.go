@@ -211,6 +211,7 @@ resource "github_team" "foo" {
 	name = "%s"
 	description = "Terraform acc test group"
 	privacy = "secret"
+	maintainers = ["bar"]
 }
 `, teamName)
 }
