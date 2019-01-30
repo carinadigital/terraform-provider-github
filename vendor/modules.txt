@@ -60,8 +60,8 @@ github.com/google/go-cmp/cmp
 github.com/google/go-cmp/cmp/internal/diff
 github.com/google/go-cmp/cmp/internal/function
 github.com/google/go-cmp/cmp/internal/value
-# github.com/google/go-github v16.0.0+incompatible
-github.com/google/go-github/github
+# github.com/google/go-github/v21 v21.0.1
+github.com/google/go-github/v21/github
 # github.com/google/go-querystring v1.0.0
 github.com/google/go-querystring/query
 # github.com/hashicorp/errwrap v1.0.0
@@ -216,7 +216,7 @@ github.com/zclconf/go-cty/cty/gocty
 github.com/zclconf/go-cty/cty/set
 github.com/zclconf/go-cty/cty/function
 github.com/zclconf/go-cty/cty/function/stdlib
-# golang.org/x/crypto v0.0.0-20181127143415-eb0de9b17e85
+# golang.org/x/crypto v0.0.0-20190130090550-b01c7a725664
 golang.org/x/crypto/openpgp
 golang.org/x/crypto/bcrypt
 golang.org/x/crypto/ssh
@@ -233,26 +233,26 @@ golang.org/x/crypto/cast5
 golang.org/x/crypto/openpgp/elgamal
 golang.org/x/crypto/ed25519/internal/edwards25519
 golang.org/x/crypto/internal/subtle
-# golang.org/x/net v0.0.0-20181129055619-fae4c4e3ad76
+# golang.org/x/net v0.0.0-20190125091013-d26f9f9a57f3
 golang.org/x/net/context
-golang.org/x/net/http2
 golang.org/x/net/trace
 golang.org/x/net/context/ctxhttp
-golang.org/x/net/http/httpguts
+golang.org/x/net/internal/timeseries
+golang.org/x/net/http2
 golang.org/x/net/http2/hpack
 golang.org/x/net/idna
-golang.org/x/net/internal/timeseries
-# golang.org/x/oauth2 v0.0.0-20181003184128-c57b0facaced
+golang.org/x/net/http/httpguts
+# golang.org/x/oauth2 v0.0.0-20190130055435-99b60b757ec1
 golang.org/x/oauth2
 golang.org/x/oauth2/internal
-# golang.org/x/sys v0.0.0-20181128092732-4ed8d59d0b35
+# golang.org/x/sys v0.0.0-20190130150945-aca44879d564
 golang.org/x/sys/unix
-# golang.org/x/text v0.3.0
+# golang.org/x/text v0.3.1-0.20180807135948-17ff2d5776d2
 golang.org/x/text/unicode/norm
 golang.org/x/text/transform
 golang.org/x/text/secure/bidirule
 golang.org/x/text/unicode/bidi
-# google.golang.org/appengine v1.3.0
+# google.golang.org/appengine v1.4.0
 google.golang.org/appengine/urlfetch
 google.golang.org/appengine/datastore
 google.golang.org/appengine/internal
@@ -264,9 +264,9 @@ google.golang.org/appengine/internal/log
 google.golang.org/appengine/internal/remote_api
 google.golang.org/appengine/internal/app_identity
 google.golang.org/appengine/internal/modules
-# google.golang.org/genproto v0.0.0-20180831171423-11092d34479b
+# google.golang.org/genproto v0.0.0-20190128161407-8ac453e89fca
 google.golang.org/genproto/googleapis/rpc/status
-# google.golang.org/grpc v1.14.0
+# google.golang.org/grpc v1.18.0
 google.golang.org/grpc
 google.golang.org/grpc/credentials
 google.golang.org/grpc/health
@@ -280,9 +280,11 @@ google.golang.org/grpc/encoding/proto
 google.golang.org/grpc/grpclog
 google.golang.org/grpc/internal
 google.golang.org/grpc/internal/backoff
+google.golang.org/grpc/internal/binarylog
 google.golang.org/grpc/internal/channelz
 google.golang.org/grpc/internal/envconfig
 google.golang.org/grpc/internal/grpcrand
+google.golang.org/grpc/internal/grpcsync
 google.golang.org/grpc/internal/transport
 google.golang.org/grpc/keepalive
 google.golang.org/grpc/metadata
@@ -295,4 +297,7 @@ google.golang.org/grpc/stats
 google.golang.org/grpc/status
 google.golang.org/grpc/tap
 google.golang.org/grpc/test/bufconn
+google.golang.org/grpc/credentials/internal
 google.golang.org/grpc/balancer/base
+google.golang.org/grpc/binarylog/grpc_binarylog_v1
+google.golang.org/grpc/internal/syscall
