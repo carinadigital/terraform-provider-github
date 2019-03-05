@@ -3,6 +3,7 @@ package github
 import (
 	"context"
 	"fmt"
+	"os"
 	"strconv"
 	"testing"
 
@@ -211,9 +212,9 @@ resource "github_team" "foo" {
 	name = "%s"
 	description = "Terraform acc test group"
 	privacy = "secret"
-	maintainers = ["bar"]
+	maintainers = ["%s"]
 }
-`, teamName)
+`, teamName, os.Getenv("GITHUB_TEST_USER"))
 }
 
 func testAccGithubTeamUpdateConfig(randString string) string {
